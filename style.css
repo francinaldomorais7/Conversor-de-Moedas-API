@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #3C58D9;
+    background: linear-gradient(315deg, #3C58D9 28%, #4DC6B7 82%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.currency-row {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.currency-input {
+    flex: 2;
+}
+
+.currency-select {
+    flex: 1;
+    font-size: 1rem;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #0e30c7;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3d50df;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(102, 128, 235, 0.2);
+    transform: translateY(-4px);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #556;
+    text-align: left;
+    font-weight: 600;
+}
+
+.converte-btn {
+    background: linear-gradient(225deg, #5B22C9 11%, #368FD4 100%, #11FBDF 100%);
+    color: #fff;
+    border: none;
+    padding: 30px 50px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.converte-btn:hover {
+    transform: translateY(-4px);
+    opacity: 0.8;
+}
+
+.loading {
+    margin-top: 20px;
+    display: none;
+}
+
+.spiner {
+    border: 3px solid #dcdcdc;
+    border-top: 3px solid #0000FF;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #9a9898;
+}
+
+.result {
+    background: linear-gradient(50deg, #f093fb 0%, #f5576c 100%);
+    padding: 20px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.erro {
+    background: linear-gradient(50deg, #f08a24, #f5576c);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}

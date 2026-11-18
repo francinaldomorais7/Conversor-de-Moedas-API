@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Conversor de Moedas API</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Conversor de Moedas</h1>
+
+        <form class="converter-form" id="converterForme">
+            <div class="currency-row">
+
+                <div class="currency-input">
+
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" placeholder="Digite um valor" step="0.1" min="0" required>
+
+                </div>
+
+                <div class="currency-select">
+
+                    <label for="fromCurrency">De</label>
+                    <select id="fromCurrency" required>
+                        <option value="USD">USD - DOLAR</option>
+                        <option value="BRL" selected>BRL - REAL</option>
+                        <option value="EUR">EUR - EURO</option>
+                        <option value="GBP">GBP - LIBRA ESTERLINA</option>
+                        <option value="JPY">JPY - IENE</option>
+                        <option value="CAD">CAD - DOLAR CANADENSE</option>
+                        <option value="AUD">AUD - DOLAR AUSTRALIANO</option>
+                        <option value="CHF">CHF - FRANCO SUICO</option>
+                        <option value="CNY">CNY - YUAN</option>
+                        <option value="ARS">ARS - PESO ARGENTINO</option>
+                        <option value="CLP">CLP - PESO CHILENO</option>
+                        <option value="MXN">MXN - PESO MEXICANO</option>
+                        <option value="UYU">UYU - PESO URUGUAIO</option>
+                        <option value="PYG">PYG - GUARANI</option>
+                        <option value="PEN">PEN - SOL</option>
+                        <option value="COP">COP - PESO COLOMBIANO</option>
+                        <option value="SEK">SEK - COROA SUECA</option>
+                        <option value="NOK">NOK - COROA NORUEGUESA</option>
+                        <option value="RUB">RUB - RUBLO</option>
+                        <option value="INR">INR - RUPIA INDIANA</option>
+                        <option value="ZAR">ZAR - RAND</option>
+                        <option value="KRW">KRW - WON SUL COREANO</option>
+                        <option value="NZD">NZD - DOLAR NEOZELANDES</option>
+                        <option value="SGD">SGD - DOLAR DE SINGAPURA</option>
+                        <option value="HKD">HKD - DOLAR DE HONG KONG</option>
+                        <option value="TRY">TRY - LIRA TURCA</option>
+                        <option value="AED">AED - DIRHAM</option>
+                        <option value="SAR">SAR - RIYAL SAUDITA</option>
+                        <option value="ILS">ILS - SHEKEL</option>
+                        <option value="BTC">BTC - BITCOIN</option>
+
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="currency-row">
+
+                <div class="currency-input">
+
+                    <label for="convertedAmount">Resultado</label>
+                    <input type="text" readonly id="convertedAmount" placeholder="Valor Converdito" required>
+
+                </div>
+
+                <div class="currency-select">
+
+                    <label for="toCurrency">Para</label>
+                    <select id="toCurrency" required>
+                        <option value="USD" selected>USD - DOLAR</option>
+                        <option value="BRL">BRL - REAL</option>
+                        <option value="EUR">EUR - EURO</option>
+                        <option value="GBP">GBP - LIBRA ESTERLINA</option>
+                        <option value="JPY">JPY - IENE</option>
+                        <option value="CAD">CAD - DOLAR CANADENSE</option>
+                        <option value="AUD">AUD - DOLAR AUSTRALIANO</option>
+                        <option value="CHF">CHF - FRANCO SUICO</option>
+                        <option value="CNY">CNY - YUAN</option>
+                        <option value="ARS">ARS - PESO ARGENTINO</option>
+                        <option value="CLP">CLP - PESO CHILENO</option>
+                        <option value="MXN">MXN - PESO MEXICANO</option>
+                        <option value="UYU">UYU - PESO URUGUAIO</option>
+                        <option value="PYG">PYG - GUARANI</option>
+                        <option value="PEN">PEN - SOL</option>
+                        <option value="COP">COP - PESO COLOMBIANO</option>
+                        <option value="SEK">SEK - COROA SUECA</option>
+                        <option value="NOK">NOK - COROA NORUEGUESA</option>
+                        <option value="RUB">RUB - RUBLO</option>
+                        <option value="INR">INR - RUPIA INDIANA</option>
+                        <option value="ZAR">ZAR - RAND</option>
+                        <option value="KRW">KRW - WON SUL COREANO</option>
+                        <option value="NZD">NZD - DOLAR NEOZELANDES</option>
+                        <option value="SGD">SGD - DOLAR DE SINGAPURA</option>
+                        <option value="HKD">HKD - DOLAR DE HONG KONG</option>
+                        <option value="TRY">TRY - LIRA TURCA</option>
+                        <option value="AED">AED - DIRHAM</option>
+                        <option value="SAR">SAR - RIYAL SAUDITA</option>
+                        <option value="ILS">ILS - SHEKEL</option>
+                        <option value="BTC">BTC - BITCOIN</option>
+
+                    </select>
+
+                </div>
+            </div>
+
+            <button type="submit" class="converte-btn" id="converterBtn"> 💰 Converter Moeda</button>
+        </form>
+
+        <div class="loading">
+
+            <div class="spiner"></div>
+            <p>Buscando cotação...</p>
+
+        </div>
+
+        <div class="result">
+            
+        </div>
+
+        <div class="erro">
+
+        </div>
+
+        <div class="info">
+            <p> 💡 Converção via API</p>
+        </div>
+
+    </main>
+</body>
+
+</html>
