@@ -1,9 +1,9 @@
 # 💱 Conversor de Moedas
 
-![HTML5](https://shields.io)
-![CSS3](https://shields.io)
-![JavaScript](https://shields.io)
-![API](https://shields.io)
+<img src = "https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt = "Html5">
+<img src = "https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000" alt = "CSS3">
+<img src = "https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt = "JavaScript">
+<img src = "https://img.icons8.com/?size=100&id=21896&format=png&color=000000" alt = "Api">
 
 Um aplicativo web moderno e responsivo para conversão de moedas em tempo real, utilizando taxas de câmbio atualizadas via API externa.
 
